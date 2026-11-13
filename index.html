@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Devi's Farm supplies country chicken eggs (Nattu Kozhi Muttai), with home delivery and wholesale enquiries.">
+<meta name="theme-color" content="#174d27">
+<title>Devi's Farm | Fresh Country Chicken Eggs</title>
+<style>
+:root{--green:#174d27;--deep:#10391d;--leaf:#4f7f35;--cream:#fffaf0;--pale:#f0f3dc;--gold:#f3b51b;--ink:#1d2d20;--muted:#687468;--line:#e8e8d9;--shadow:0 12px 35px rgba(26,67,32,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.55}a{text-decoration:none;color:inherit}.wrap{width:min(1180px,calc(100% - 38px));margin:auto}
+.topline{background:var(--deep);color:#f7f3e7;text-align:center;padding:8px 12px;font-size:13px;letter-spacing:.03em}
+header{position:sticky;top:0;z-index:10;background:rgba(255,250,240,.97);box-shadow:0 2px 12px #183b2010}
+.nav{height:88px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:10px;min-width:245px}.logo{width:57px;height:57px;border-radius:50%;background:var(--green);color:white;display:grid;place-items:center;font-size:32px;border:3px solid #d8e6bd}
+.brand strong{display:block;font: bold 34px Georgia,serif;color:var(--green);line-height:1}.brand small{color:#75532b;font-weight:bold;letter-spacing:.04em}
+.links{display:flex;align-items:center;gap:22px;font-size:14px;font-weight:700}.links a:hover{color:var(--leaf)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 21px;border-radius:30px;background:var(--green);color:#fff;font-weight:800;border:0;cursor:pointer;transition:.2s}.btn:hover{background:var(--deep);transform:translateY(-1px)}.btn.gold{background:var(--gold);color:#17391f}.btn.gold:hover{background:#dfa00d}
+.menu{display:none;border:1px solid var(--line);background:white;border-radius:10px;padding:8px 12px;font-size:22px}
+.hero{background:linear-gradient(90deg,#fff9e9 0%,#f3f1d8 50%,#dfe9c9 100%);overflow:hidden}
+.hero-inner{min-height:420px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:25px;padding-top:34px;padding-bottom:34px}
+.kicker{font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--leaf)}
+h1,h2,h3{font-family:Georgia,serif;line-height:1.12}h1{font-size:clamp(42px,5vw,66px);color:var(--green);margin:12px 0 15px;letter-spacing:-.03em}
+.hero p{font-size:18px;color:#4d5e4a;max-width:510px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+.hero-photo{height:345px;border-radius:48% 48% 24px 24px;position:relative;display:grid;place-items:center;background:linear-gradient(145deg,#aec77c,#527d3b 62%,#264e2d);box-shadow:var(--shadow);overflow:hidden}
+.hero-photo:before{content:"";position:absolute;inset:18px;border:1px solid #ffffff55;border-radius:48% 48% 15px 15px}
+.hero-photo .hen{font-size:145px;position:absolute;left:11%;top:20px;filter:drop-shadow(0 9px 6px #0003)}
+.basket{position:absolute;bottom:22px;right:8%;width:65%;padding:20px 12px 14px;text-align:center;background:#b77b3d;border:8px solid #9a612e;border-radius:22px 22px 48px 48px;color:white;box-shadow:0 12px 18px #0003}
+.basket .eggs{font-size:54px;letter-spacing:-12px;filter:drop-shadow(0 3px 2px #0003)}.basket b{display:block;letter-spacing:.13em;font-size:12px}
+.sticker{position:absolute;background:#fff;border-radius:13px;padding:10px 14px;font-weight:bold;color:var(--green);box-shadow:var(--shadow);font-size:13px}.sticker.one{left:0;bottom:16%}.sticker.two{right:0;top:13%}
+.benefits{background:#edf2d8;border-top:1px solid #dce5c8;border-bottom:1px solid #dce5c8}.benefit-row{display:grid;grid-template-columns:repeat(4,1fr);padding:19px 0;gap:12px}.benefit{display:flex;align-items:center;justify-content:center;gap:10px;font-weight:700;color:var(--green);font-size:14px}.benefit span{font-size:25px}
+section{padding:70px 0}.section-title{text-align:center;max-width:700px;margin:0 auto 34px}.section-title h2{font-size:38px;color:var(--green);margin:8px 0}.section-title p{color:var(--muted);margin:0}
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center}.photo-box{height:310px;border-radius:24px;background:linear-gradient(145deg,#dfe9c8,#9ab879);display:grid;place-items:center;font-size:120px;box-shadow:var(--shadow);position:relative;overflow:hidden}.photo-box:after{content:"DEVI'S FARM";position:absolute;bottom:17px;right:18px;background:var(--green);color:white;padding:7px 13px;border-radius:20px;font-size:11px;letter-spacing:.12em;font-weight:bold}
+.about h2{font-size:39px;color:var(--green);margin:8px 0 15px}.about p{color:var(--muted)}.ticks{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:0;list-style:none;margin-top:22px}.ticks li:before{content:"✓";color:var(--leaf);font-weight:bold;margin-right:8px}
+.products{background:#f1f3e4}.product-card{max-width:850px;margin:auto;background:#fff;border-radius:24px;box-shadow:var(--shadow);border:1px solid var(--line);overflow:hidden;display:grid;grid-template-columns:.8fr 1.2fr}.product-image{display:grid;place-items:center;background:linear-gradient(145deg,#f1e5c3,#c6d69c);font-size:112px;min-height:260px}.product-copy{padding:32px}.label{display:inline-block;background:#e9f0dc;color:var(--green);padding:5px 12px;border-radius:30px;font-size:11px;font-weight:800;letter-spacing:.08em}.product-copy h3{font-size:29px;color:var(--green);margin:13px 0}.product-copy p{color:var(--muted)}.price{font-weight:bold;color:var(--green);margin:18px 0}
+.services{display:grid;grid-template-columns:1fr 1fr;gap:22px}.service{background:#fff;border:1px solid var(--line);border-radius:22px;padding:28px;box-shadow:var(--shadow)}.service .icon{font-size:42px}.service h3{font-size:27px;color:var(--green);margin:8px 0}.service p,.service li{color:var(--muted)}.service ul{padding-left:20px}
+.gallery{background:#f1f3e4}.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.gallery-item{height:180px;border-radius:17px;display:grid;place-items:center;font-size:68px;background:linear-gradient(145deg,#e4edce,#9dbb7d)}.gallery-item:nth-child(2),.gallery-item:nth-child(5){background:linear-gradient(145deg,#f7e8c7,#d9b879)}.gallery-item:nth-child(3),.gallery-item:nth-child(6){background:linear-gradient(145deg,#d6e8d1,#7fa777)}
+.contact{background:var(--deep);color:white}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.contact h2{font-size:40px;margin:9px 0}.contact p{color:#d5e1d1}.details{margin-top:22px;display:grid;gap:12px;color:#f0f4e8}.form{background:#fff;color:var(--ink);padding:27px;border-radius:22px}.form h3{color:var(--green);font-size:25px;margin:0 0 15px}label{display:block;font-weight:bold;font-size:13px;margin:12px 0 5px}input,select,textarea{width:100%;border:1px solid #d8dfd2;border-radius:10px;padding:12px;font:inherit;background:#fffefa}textarea{min-height:80px}.form button{width:100%;margin-top:16px}
+footer{background:#092b15;color:#dce7d8;padding:22px 0;font-size:13px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.foot strong{font: bold 23px Georgia,serif;color:white}.muted{color:#b8cbb5;font-size:12px}
+@media(max-width:950px){.links{display:none;position:absolute;top:88px;left:0;right:0;background:var(--cream);padding:20px;flex-direction:column;align-items:flex-start;border-top:1px solid var(--line)}.links.open{display:flex}.menu{display:block}.nav>.btn{display:none}.hero-inner{grid-template-columns:1fr;text-align:center}.hero p{margin:auto}.hero-actions{justify-content:center}.hero-photo{width:min(520px,100%);margin:12px auto}.benefit-row{grid-template-columns:1fr 1fr}.about{grid-template-columns:1fr}.contact-grid{grid-template-columns:1fr}}
+@media(max-width:620px){.wrap{width:calc(100% - 28px)}.brand{min-width:0}.brand strong{font-size:25px}.logo{width:47px;height:47px;font-size:26px}.hero-inner{padding-top:48px}.hero-photo{height:280px}.hero-photo .hen{font-size:105px}.basket{width:70%}.sticker{font-size:11px}.benefit-row{gap:15px 7px}.benefit{justify-content:flex-start;font-size:12px}.benefit span{font-size:21px}section{padding:55px 0}.section-title h2,.about h2,.contact h2{font-size:31px}.product-card{grid-template-columns:1fr}.product-image{min-height:180px}.product-copy{padding:24px}.services{grid-template-columns:1fr}.gallery-grid{grid-template-columns:1fr 1fr}.gallery-item{height:135px;font-size:54px}.ticks{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="topline">Fresh country chicken eggs • Home delivery • Wholesale orders</div>
+<header><div class="wrap nav">
+<a class="brand" href="#home"><span class="logo">🐓</span><span><strong>Devi's Farm</strong><small>FRESH EGGS • HEALTHY LIFE</small></span></a>
+<button class="menu" id="menu" aria-label="Open navigation">☰</button>
+<nav class="links" id="links"><a href="#home">Home</a><a href="#about">About Us</a><a href="#eggs">Our Eggs</a><a href="#delivery">Home Delivery</a><a href="#wholesale">Wholesale</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></nav>
+<a class="btn" href="#contact">☏ Order on WhatsApp</a>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-inner">
+<div><div class="kicker">Good food starts at the farm</div><h1>Fresh Country Chicken Eggs from Devi's Farm</h1><p>Country chicken eggs (Nattu Kozhi Muttai), supplied with care for your family, shop, hotel or restaurant.</p><div class="hero-actions"><a class="btn gold" href="#contact">🛒 Order Now →</a><a class="btn" href="#wholesale">Wholesale Enquiry</a></div></div>
+<div class="hero-photo"><div class="hen">🐓</div><div class="basket"><div class="eggs">🥚🥚🥚</div><b>FRESH FROM DEVI'S FARM</b></div><div class="sticker one">🌿 Country chicken eggs</div><div class="sticker two">🥚 Fresh with care</div></div>
+</div></section>
+<div class="benefits"><div class="wrap benefit-row"><div class="benefit"><span>🌿</span>Country chicken eggs</div><div class="benefit"><span>🥚</span>Fresh supply</div><div class="benefit"><span>🏡</span>Home delivery</div><div class="benefit"><span>🤝</span>Retail & wholesale</div></div></div>
+<section id="about"><div class="wrap about"><div class="photo-box">🐔🥚</div><div><div class="kicker">Our story</div><h2>Welcome to Devi's Farm</h2><p>Devi's Farm is a family-led farm business with a simple aim: to supply country chicken eggs to customers with care and dependable service.</p><p>We welcome individual customers looking for home delivery as well as shops, hotels and restaurants looking for regular bulk supply.</p><ul class="ticks"><li>Country chicken eggs</li><li>Individual orders</li><li>Wholesale enquiries</li><li>Friendly service</li></ul></div></div></section>
+<section class="products" id="eggs"><div class="wrap"><div class="section-title"><div class="kicker">From our farm to your table</div><h2>Our Country Chicken Eggs</h2><p>Nattu Kozhi Muttai — contact us for current availability and today's price.</p></div><div class="product-card"><div class="product-image">🧺🥚</div><div class="product-copy"><span class="label">OUR FARM PRODUCT</span><h3>Country Chicken Eggs</h3><p>Choose the quantity you need. We welcome household orders and bulk enquiries.</p><div class="price">Price: Please enquire for today's rate</div><a class="btn" href="#contact">Ask Price & Availability</a></div></div></div></section>
+<section id="delivery"><div class="wrap"><div class="section-title"><div class="kicker">Easy ordering</div><h2>How Can We Help You?</h2><p>Fresh country eggs for individual homes and bulk buyers.</p></div><div class="services">
+<article class="service"><div class="icon">🏡</div><h3>Home Delivery</h3><p>For individual customers and families. Tell us your required quantity and delivery area; we'll confirm availability and delivery charges.</p><ul><li>Small and family-size orders</li><li>One-time or repeat orders</li><li>Delivery details confirmed directly</li></ul><a class="btn" href="#contact" data-kind="Individual home delivery">Order for Home</a></article>
+<article class="service" id="wholesale"><div class="icon">🏪</div><h3>Wholesale Orders</h3><p>For grocery shops, hotels, restaurants and other bulk buyers looking for a dependable supply.</p><ul><li>Bulk quantity enquiries</li><li>Discuss regular supply</li><li>Request wholesale pricing</li></ul><a class="btn" href="#contact" data-kind="Wholesale / bulk supply">Get Wholesale Rate</a></article>
+</div></div></section>
+<section class="gallery" id="gallery"><div class="wrap"><div class="section-title"><div class="kicker">A glimpse of farm life</div><h2>Our Farm Gallery</h2><p>These are design placeholders. Add your own farm and egg photographs here.</p></div><div class="gallery-grid"><div class="gallery-item">🐓</div><div class="gallery-item">🥚</div><div class="gallery-item">🌳</div><div class="gallery-item">🧺</div><div class="gallery-item">🐣</div><div class="gallery-item">🌱</div></div></div></section>
+<section class="contact" id="contact"><div class="wrap contact-grid"><div><div class="kicker" style="color:#d8e8b5">We'd love to hear from you</div><h2>Contact Devi's Farm</h2><p>Ask about today's egg price, place a home delivery order or enquire about wholesale supply.</p><div class="details"><div>📍 Ramanathapuram, Tamil Nadu</div><div>📱 WhatsApp orders welcome</div><div>✉️ Business email can be added here</div></div></div>
+<form class="form" id="orderForm"><h3>Send an order enquiry</h3><label for="name">Your name</label><input id="name" name="name" required placeholder="Enter your name"><label for="phone">Mobile number</label><input id="phone" name="phone" required inputmode="tel" placeholder="Your contact number"><label for="type">Order type</label><select id="type" name="type"><option>Individual home delivery</option><option>Wholesale / bulk supply</option><option>Price and availability enquiry</option></select><label for="qty">Quantity / requirement</label><input id="qty" name="qty" placeholder="Example: 12 eggs, 1 tray, weekly supply"><label for="area">Delivery area / message</label><textarea id="area" name="area" placeholder="Enter your area and any other details"></textarea><button class="btn" type="submit">Send Enquiry on WhatsApp →</button><p class="muted">Your message opens in WhatsApp for you to review and send.</p></form></div></section>
+</main>
+<footer><div class="wrap foot"><div><strong>🐓 Devi's Farm</strong><div class="muted">Fresh Country Eggs • Healthy Life</div></div><div>Home　|　About　|　Our Eggs　|　Delivery　|　Wholesale　|　Contact</div><div class="muted">© <span id="year"></span> Devi's Farm. All rights reserved.</div></div></footer>
+<script>
+// IMPORTANT: Add your WhatsApp number below: country code + number, digits only.
+// Example format for India: 919876543210
+const WHATSAPP_NUMBER = "91XXXXXXXXXX";
+document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("menu").addEventListener("click",()=>document.getElementById("links").classList.toggle("open"));
+document.querySelectorAll("#links a").forEach(a=>a.addEventListener("click",()=>document.getElementById("links").classList.remove("open")));
+document.querySelectorAll("[data-kind]").forEach(a=>a.addEventListener("click",()=>{document.getElementById("type").value=a.dataset.kind;}));
+document.getElementById("orderForm").addEventListener("submit",function(e){
+ e.preventDefault();
+ if(WHATSAPP_NUMBER.includes("X")){alert("Please add your WhatsApp number in the script section at the bottom of index.html.");return;}
+ const d=new FormData(this);
+ const msg=["Hello Devi's Farm! I would like to enquire about country chicken eggs (Nattu Kozhi Muttai).","Name: "+d.get("name"),"Mobile: "+d.get("phone"),"Order type: "+d.get("type"),"Quantity: "+(d.get("qty")||"Not specified"),"Delivery area / message: "+(d.get("area")||"Not specified")].join("\n");
+ window.open("https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(msg),"_blank","noopener");
+});
+</script>
+</body></html>
